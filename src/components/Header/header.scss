@@ -347,9 +347,16 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .cs-site_branding img {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .cs-main_header {
     position: relative;
+
 
     .container-fluid {
       padding-right: 40px;
@@ -792,9 +799,10 @@
   }
 
   .cs-site_branding img {
+    left: -16%;
     max-height: 327px;
-    left: -50%;
-    position: relative;
+    position: absolute;
+    top: -120%;
   }
 
   .cs-site_header.cs-style1 .cs-btn {
