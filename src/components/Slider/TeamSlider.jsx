@@ -32,7 +32,7 @@ export default function TeamSlider() {
     {
       memberImage: '/images/haris.jpg',
       memberName: 'Haris Ali',
-      memberDesignation: 'Graphic Designer',
+      memberDesignation: 'UI/UX Designer',
       memberSocial: {
         linkedin: '/',
         twitter: '/',
