@@ -11,6 +11,7 @@ export default function TeamSlider() {
       memberImage: '/images/abdullah.jpg',
       memberName: 'Muhammad Abdullah',
       memberDesignation: 'Web Developer',
+      outlink: 'https://abdullah.webstacking.com',
       memberSocial: {
         linkedin: '/',
         twitter: '/',
@@ -22,6 +23,7 @@ export default function TeamSlider() {
       memberImage: '/images/abdullahkhizer.jpg',
       memberName: 'Abdullah Khizer',
       memberDesignation: 'Web Developer',
+      outlink: 'https://www.webstacking.com',
       memberSocial: {
         linkedin: '/',
         twitter: '/',
@@ -33,6 +35,7 @@ export default function TeamSlider() {
       memberImage: '/images/haris.jpg',
       memberName: 'Haris Ali',
       memberDesignation: 'UI/UX Designer',
+      outlink: 'https://haris.webstacking.com',
       memberSocial: {
         linkedin: '/',
         twitter: '/',
@@ -110,6 +113,7 @@ export default function TeamSlider() {
             memberName={item.memberName}
             memberDesignation={item.memberDesignation}
             memberSocial={item.memberSocial}
+                outlink={item.outlink}
           />
         </Div>
       ))}

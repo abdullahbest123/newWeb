@@ -11,9 +11,10 @@ export default function TeamPage() {
   pageTitle('Team');
   const teamData = [
     {
-      memberImage: '/images/member_1.jpeg',
-      memberName: 'Melon Bulgery',
-      memberDesignation: 'Product Designer',
+      memberImage: '/images/abdullah.jpg',
+      memberName: 'Muhammad Abdullah',
+      memberDesignation: 'Web Developer',
+      outlink: 'https://abdullah.webstacking.com',
       memberSocial: {
         linkedin: '/',
         twitter: '/',
@@ -22,9 +23,10 @@ export default function TeamPage() {
       },
     },
     {
-      memberImage: '/images/member_2.jpeg',
-      memberName: 'Olinaz Fushi',
-      memberDesignation: 'Product Designer',
+      memberImage: '/images/abdullahkhizer.jpg',
+      memberName: 'Abdullah Khizer',
+      memberDesignation: 'Web Developer',
+      outlink: 'https://www.webstacking.com',
       memberSocial: {
         linkedin: '/',
         twitter: '/',
@@ -33,64 +35,10 @@ export default function TeamPage() {
       },
     },
     {
-      memberImage: '/images/member_3.jpeg',
-      memberName: 'David Elone',
-      memberDesignation: 'React Developer',
-      memberSocial: {
-        linkedin: '/',
-        twitter: '/',
-        youtube: '/',
-        facebook: '/',
-      },
-    },
-    {
-      memberImage: '/images/member_4.jpeg',
-      memberName: 'Melina Opole',
-      memberDesignation: 'WP Developer',
-      memberSocial: {
-        linkedin: '/',
-        twitter: '/',
-        youtube: '/',
-        facebook: '/',
-      },
-    },
-    {
-      memberImage: '/images/member_3.jpeg',
-      memberName: 'David Elone',
-      memberDesignation: 'React Developer',
-      memberSocial: {
-        linkedin: '/',
-        twitter: '/',
-        youtube: '/',
-        facebook: '/',
-      },
-    },
-    {
-      memberImage: '/images/member_4.jpeg',
-      memberName: 'Melina Opole',
-      memberDesignation: 'WP Developer',
-      memberSocial: {
-        linkedin: '/',
-        twitter: '/',
-        youtube: '/',
-        facebook: '/',
-      },
-    },
-    {
-      memberImage: '/images/member_1.jpeg',
-      memberName: 'Melon Bulgery',
-      memberDesignation: 'Product Designer',
-      memberSocial: {
-        linkedin: '/',
-        twitter: '/',
-        youtube: '/',
-        facebook: '/',
-      },
-    },
-    {
-      memberImage: '/images/member_2.jpeg',
-      memberName: 'Olinaz Fushi',
-      memberDesignation: 'Product Designer',
+      memberImage: '/images/haris.jpg',
+      memberName: 'Haris Ali',
+      memberDesignation: 'UI/UX Designer',
+      outlink: 'https://haris.webstacking.com',
       memberSocial: {
         linkedin: '/',
         twitter: '/',
@@ -127,6 +75,7 @@ export default function TeamPage() {
                 memberName={item.memberName}
                 memberDesignation={item.memberDesignation}
                 memberSocial={item.memberSocial}
+                outlink={item.outlink}
               />
               <Spacing lg="80" md="30" />
             </Div>

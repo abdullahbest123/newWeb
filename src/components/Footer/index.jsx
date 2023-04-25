@@ -48,7 +48,7 @@ export default function Footer({ copyrightText, logoSrc, logoAlt, text }) {
                 <TextWidget
                   logoSrc='/images/Text.png'
                   logoAlt='Logo'
-                  text='Welcome to arino sed ut perspiciae omunde omnis iste natus error sitort voluptatem accusantium.'
+                  text='We are a web development company specializing in web stack technologies, providing end-to-end solutions for businesses of all sizes.'
                 />
                 <SocialWidget />
               </Div>
@@ -67,7 +67,7 @@ export default function Footer({ copyrightText, logoSrc, logoAlt, text }) {
               <Div className="cs-footer_item">
                 <Newsletter
                   title='Subscribe'
-                  subtitle='At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit.'
+                  subtitle='Our team of experts delivers high-quality websites and web applications.'
                   placeholder='example@gmail.com'
                 />
               </Div>

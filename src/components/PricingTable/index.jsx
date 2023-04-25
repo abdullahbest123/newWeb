@@ -10,8 +10,7 @@ export default function PricingTable({title, price, currency, features, btnLink,
       <h2 className="cs-pricing_title">{title}</h2>
       <Div className="cs-pricing_info">
         <Div className="cs-price">
-          <h3 className="cs-white_color">{currency}{price}/</h3>
-          <span className="cs-accent_color">{timeline}</span>
+          <h3 className="cs-white_color">{currency}{price}</h3>
         </Div>
         <Div className="cs-price_text">Per subscriber per year</Div>
       </Div>

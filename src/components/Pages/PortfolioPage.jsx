@@ -183,7 +183,7 @@ export default function PortfolioPage() {
       </Div>
       <Spacing lg="145" md="80" />
       <Cta
-        title="agency@arino.com"
+        title='wstacking@gmail.com' 
         bgSrc="/images/cta_bg_2.jpeg"
         variant="rounded-0"
       />

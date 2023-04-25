@@ -41,67 +41,10 @@ export default function Header({ variant }) {
                     className="cs-nav_list"
                     style={{ display: `${mobileToggle ? 'block' : 'none'}` }}
                   >
-                    <li className="menu-item-has-children">
+                    <li>
                       <NavLink to="/" onClick={() => setMobileToggle(false)}>
                         Home
                       </NavLink>
-                      <DropDown>
-                        <ul>
-                          <li>
-                            <Link to="/" onClick={() => setMobileToggle(false)}>
-                              Main Home
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              to="photography-agency"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Photography Agency
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              to="creative-portfolio"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Creative Portfolio
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              to="digital-agency"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Digital Agency
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              to="marketing-agency"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Marketing Agency
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              to="showcase-portfolio"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Showcase Portfolio
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              to="case-study-showcase"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Case Study Showcase
-                            </Link>
-                          </li>
-                        </ul>
-                      </DropDown>
                     </li>
                     <li>
                       <NavLink
@@ -167,7 +110,7 @@ export default function Header({ variant }) {
                         </ul>
                       </DropDown>
                     </li>
-                    <li className="menu-item-has-children">
+                    {/* <li className="menu-item-has-children">
                       <NavLink to="blog" onClick={() => setMobileToggle(false)}>
                         Blog
                       </NavLink>
@@ -191,7 +134,7 @@ export default function Header({ variant }) {
                           </li>
                         </ul>
                       </DropDown>
-                    </li>
+                    </li> */}
                     <li className="menu-item-has-children">
                       <Link to="/" onClick={() => setMobileToggle(false)}>
                         Pages
@@ -214,14 +157,7 @@ export default function Header({ variant }) {
                               Team
                             </Link>
                           </li>
-                          <li>
-                            <Link
-                              to="/team/team-details"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Team Details
-                            </Link>
-                          </li>
+                          
                           <li>
                             <Link
                               to="/case-study/case-study-details"
@@ -289,9 +225,9 @@ export default function Header({ variant }) {
         />
         <Div className="cs-side_header_in">
           <Div className="cs-side_header_shape" />
-          <Link className="cs-site_branding" to="/">
-            <img src="/images/footer_logo.png" alt="Logo" />
-          </Link>
+          {/* <Link className="cs-site_branding" to="/">
+            <img src="/images/icon.png" alt="Logo" />
+          </Link> */}
           <Div className="cs-side_header_box">
             <h2 className="cs-side_header_heading">
               Do you have a project in your <br /> mind? Keep connect us.
@@ -303,7 +239,7 @@ export default function Header({ variant }) {
           <Div className="cs-side_header_box">
             <Newsletter
               title="Subscribe"
-              subtitle="At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit."
+              subtitle="Best Web Development Agency."
               placeholder="example@gmail.com"
             />
           </Div>

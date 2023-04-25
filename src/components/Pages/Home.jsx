@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Card from '../Card';
 import FunFact from '../FunFact';
+import { Icon } from '@iconify/react';
 import Hero from '../Hero';
 import Div from '../Div';
 import SectionHeading from '../SectionHeading';
@@ -9,10 +10,10 @@ import Cta from '../Cta';
 import LogoList from '../LogoList';
 import MovingText from '../MovingText';
 import PortfolioSlider from '../Slider/PortfolioSlider';
-import PostSlider from '../Slider/PostSlider';
-import TestimonialSlider from '../Slider/TestimonialSlider';
+//import PostSlider from '../Slider/PostSlider';
+//import TestimonialSlider from '../Slider/TestimonialSlider';
 import TeamSlider from '../Slider/TeamSlider';
-import VideoModal from '../VideoModal';
+//import VideoModal from '../VideoModal';
 import TimelineSlider from '../Slider/TimelineSlider';
 import { pageTitle } from '../../helper';
 
@@ -257,18 +258,87 @@ export default function Home() {
       <Div className="container">
         <LogoList />
       </Div>
-      <Spacing lg="150" md="80" />
       {/* End LogoList Section */}
-
-      {/* Start CTA Section */}
+ {/* Start Contact Section */}
+      <Spacing lg="140" md="70" />
       <Div className="container">
+        <SectionHeading
+          title="Getting touch"
+          subtitle="Contact Us"
+          variant="cs-style1 text-center"
+        />
+        <Spacing lg="90" md="45" />
+      </Div>
+      <Div className="cs-gradient_bg_1">
+        <Div className="container">
+          <Div className="row">
+            <Div className="col-xl-5 col-lg-6">
+              <Spacing lg="100" md="80" />
+              <form action="#" className="row">
+                <Div className="col-sm-6">
+                  <label className="cs-primary_color">Full Name*</label>
+                  <input type="text" className="cs-form_field" />
+                  <Spacing lg="20" md="20" />
+                </Div>
+                <Div className="col-sm-6">
+                  <label className="cs-primary_color">Email*</label>
+                  <input type="text" className="cs-form_field" />
+                  <Spacing lg="20" md="20" />
+                </Div>
+                <Div className="col-sm-6">
+                  <label className="cs-primary_color">Project Type*</label>
+                  <input type="text" className="cs-form_field" />
+                  <Spacing lg="20" md="20" />
+                </Div>
+                <Div className="col-sm-6">
+                  <label className="cs-primary_color">Mobile*</label>
+                  <input type="text" className="cs-form_field" />
+                  <Spacing lg="20" md="20" />
+                </Div>
+                <Div className="col-sm-12">
+                  <label className="cs-primary_color">Mobile*</label>
+                  <textarea
+                    cols="30"
+                    rows="7"
+                    className="cs-form_field"
+                  ></textarea>
+                  <Spacing lg="25" md="25" />
+                </Div>
+                <Div className="col-sm-12">
+                  <button className="cs-btn cs-style1">
+                    <span>Send Message</span>
+                    <Icon icon="bi:arrow-right" />
+                  </button>
+                </Div>
+              </form>
+              <Spacing lg="100" md="60" />
+            </Div>
+            <Div className="col-lg-6 offset-xl-1">
+              <Div
+                className="cs-google_map cs-type1 cs-bg"
+                data-src="assets/img/map_img_1.jpeg"
+              >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96652.27317354927!2d-74.33557928194516!3d40.79756494697628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a82f1352d0dd%3A0x81d4f72c4435aab5!2sTroy+Meadows+Wetlands!5e0!3m2!1sen!2sbd!4v1563075599994!5m2!1sen!2sbd"
+                  allowFullScreen
+                  title="Google Map"
+                />
+              </Div>
+              <Spacing lg="0" md="80" />
+            </Div>
+          </Div>
+        </Div>
+      </Div>
+      
+      {/* Start CTA Section */} 
+     {/* <Div className="container">
         <Cta
           title="Let’s disscuse make <br />something <i>cool</i> together"
           btnText="Apply For Meeting"
           btnLink="/contact"
-          bgSrc="/images/cta_bg.jpeg"
+          bgSrc="/images/cta_bg_3.jpeg"
         />
-      </Div>
+      </Div> */}
       {/* End CTA Section */}
     </>
   );

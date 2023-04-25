@@ -113,12 +113,12 @@ export default function ServicesPage() {
       <Spacing lg='125' md='55'/>
       <TestimonialSlider/>
       <Spacing lg='150' md='80'/>
-      <Div className="container">
-        <Cta 
-          title='Let’s disscuse make <br />something <i>cool</i> together' 
-          btnText='Apply For Meeting' 
-          btnLink='/contact' 
-          bgSrc='/images/cta_bg.jpeg'
+        <Div className="container">
+        <Cta
+          title="Let’s disscuse make <br />something <i>cool</i> together"
+          btnText="Apply For Meeting"
+          btnLink="/contact"
+          bgSrc="/images/cta_bg_3.jpeg"
         />
       </Div>
     </>

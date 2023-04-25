@@ -36,24 +36,24 @@ export default function ServiceDetailsPage() {
           <Div className="col-lg-4">
             <IconBox
               icon='/images/icons/service_icon_1.svg'
-              title='Sketching'
-              subtitle='Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium also a doloremque laudantium, totam remain beatae vitae dictaro enim ipsam sunt explicabo.'
+              title='Shopify Service'
+              subtitle='Our Shopify experts create stunning e-commerce websites that are highly functional, secure, and optimized for sales.'
             />
             <Spacing lg='30' md='30'/>
           </Div>
           <Div className="col-lg-4">
             <IconBox
               icon='/images/icons/service_icon_2.svg'
-              title='Wireframing'
-              subtitle='Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium also a doloremque laudantium, totam remain beatae vitae dictaro enim ipsam sunt explicabo.'
+              title='WordPress'
+              subtitle='With our deep expertise in WordPress, we build scalable and customizable CMS solutions that meet your business needs.'
             />
             <Spacing lg='30' md='30'/>
           </Div>
           <Div className="col-lg-4">
             <IconBox
               icon='/images/icons/service_icon_3.svg'
-              title='Prototyping'
-              subtitle='Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium also a doloremque laudantium, totam remain beatae vitae dictaro enim ipsam sunt explicabo.'
+              title='React'
+              subtitle='Our team uses React to develop dynamic and interactive user interfaces, delivering seamless user experiences on web and mobile platforms.'
             />
             <Spacing lg='30' md='30'/>
           </Div>
@@ -122,12 +122,12 @@ export default function ServiceDetailsPage() {
         </Div>
       </Div>
       <Spacing lg='150' md='80'/>
-      <Div className="container">
-        <Cta 
-          title='Let’s disscuse make <br />something <i>cool</i> together' 
-          btnText='Apply For Meeting' 
-          btnLink='/contact' 
-          bgSrc='/images/cta_bg.jpeg'
+        <Div className="container">
+        <Cta
+          title="Let’s disscuse make <br />something <i>cool</i> together"
+          btnText="Apply For Meeting"
+          btnLink="/contact"
+          bgSrc="/images/cta_bg_3.jpeg"
         />
       </Div>
     </>

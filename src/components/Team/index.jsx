@@ -4,11 +4,11 @@ import './team.scss'
 import { Link } from 'react-router-dom';
 import Div from '../Div';
 
-export default function Team({memberImage, memberName, memberDesignation, memberSocial}) {
+export default function Team({memberImage, memberName, memberDesignation, memberSocial,outlink}) {
   return (
     <Div className="cs-team cs-style1">
         <Div className="cs-member_thumb">
-          <img src={memberImage} alt={memberName} />
+          <a href={outlink}  target="noopener"><img src={memberImage} alt={memberName} /></a>
           <Div className="cs-member_overlay" />
         </Div>
         <Div className="cs-member_info">
