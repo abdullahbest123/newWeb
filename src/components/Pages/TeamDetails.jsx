@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { pageTitle } from '../../helper'
 import Cta from '../Cta'
-import PageHeading from '../PageHeading'
+// import PageHeading from '../PageHeading'
 import Div from '../Div'
 import Spacing from '../Spacing'
 import SocialWidget from '../Widget/SocialWidget'
@@ -13,11 +13,11 @@ export default function TeamDetails() {
   }, [])
   return (
     <>
-      <PageHeading 
+      {/* <PageHeading 
         title='Team Details'
         bgSrc='/images/team_hero_bg.jpeg'
         pageLinkText='Team Details'
-      />
+      /> */}
       <Spacing lg='150' md='80'/>
       <Div className="container">
         <Div className="row align-items-center">

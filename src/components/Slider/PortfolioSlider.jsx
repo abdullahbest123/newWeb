@@ -2,34 +2,8 @@ import React from 'react'
 import Portfolio from '../Portfolio'
 import Div from '../Div'
 import Slider from 'react-slick';
-
+import portfolioData from '../Portfolio/data.js'
 export default function PortfolioSlider() {
-  const portfolioData = [
-    {
-      title:'Colorful Art Work',
-      subtitle:'See Details',
-      href:'/portfolio/portfolio-details',
-      src:'/images/portfolio_1.jpeg'
-    },
-    {
-      title:'Colorful Art Work',
-      subtitle:'See Details',
-      href:'/portfolio/portfolio-details',
-      src:'/images/portfolio_2.jpeg'
-    },
-    {
-      title:'Colorful Art Work',
-      subtitle:'See Details',
-      href:'/portfolio/portfolio-details',
-      src:'/images/portfolio_0.jpg'
-    },
-    {
-      title:'Colorful Art Work',
-      subtitle:'See Details',
-      href:'/portfolio/portfolio-details',
-      src:'/images/portfolio_3.jpeg'
-    }
-  ]
   
   /** Slider Settings **/
   const settings = {
@@ -60,6 +34,14 @@ export default function PortfolioSlider() {
             subtitle={item.subtitle}
             href={item.href}
             src={item.src}
+            discription={item.discription}
+            catgeory={item.catgeory}
+            location={item.location}
+            stack={item.stack}
+            date={item.date}
+            client={item.client}
+            smallsrc={item.smallsrc}
+            index = {index}
           />
         </Div>
       ))}

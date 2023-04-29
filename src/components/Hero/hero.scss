@@ -448,7 +448,7 @@
     padding-top: 200px;
     min-height: 880px;
     .cs-hero_title {
-      font-size: 100px;
+      font-size: 60px;
     }
   }
   .cs-hero.cs-style3 {
@@ -497,10 +497,10 @@
   .cs-hero.cs-style1 {
     min-height: 850px;
     .cs-hero_title {
-      font-size: 80px;
+      font-size: 60px;
     }
     .cs-hero_subtitle {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
   .cs-hero.cs-style3 {
@@ -606,7 +606,7 @@
       align-items: flex-start;
     }
     .cs-hero_title {
-      font-size: 56px;
+      font-size: 42px;
       margin-bottom: 20px;
     }
     .cs-hero_subtitle {
@@ -652,7 +652,7 @@
 @media screen and (max-width: 575px) {
   .cs-hero.cs-style1 {
     .cs-hero_title {
-      font-size: 42px;
+      font-size: 38px;
       br {
         display: none;
       }

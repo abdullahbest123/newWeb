@@ -25,7 +25,11 @@ export default function Hero({
       <Div className="cs-shape_1" />
       <Div className="container">
         <Div className="cs-hero_text">
-          <h1 className="cs-hero_title">{parse(title)}</h1>
+          <h1 className="cs-hero_title ">{parse(title)}</h1>
+          {/* cs-funfact_heading 
+          cs-hero_title
+          */}
+
           <Div className="cs-hero_info">
             <Div>
               <Button btnLink={btnLink} btnText={btnText} />

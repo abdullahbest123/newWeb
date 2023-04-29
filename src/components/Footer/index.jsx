@@ -29,7 +29,7 @@ export default function Footer({ copyrightText, logoSrc, logoAlt, text }) {
       href: '/service/service-details'
     },
     {
-      title: 'Digital marketing',
+      title: 'WordPress',
       href: '/service/service-details'
     },
     {

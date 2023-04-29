@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { pageTitle } from '../../helper';
 import Cta from '../Cta';
 import Div from '../Div';
-import PageHeading from '../PageHeading';
+// import PageHeading from '../PageHeading';
 import SectionHeading from '../SectionHeading';
 import Spacing from '../Spacing';
 
@@ -13,11 +13,11 @@ export default function CaseStudyDetailsPage() {
   }, []);
   return (
     <>
-      <PageHeading
+      {/* <PageHeading
         title="Case Study Details"
         bgSrc="/images/contact_hero_bg.jpeg"
         pageLinkText="Case Study Details"
-      />
+      /> */}
       <Spacing lg="145" md="80" />
       <Div className="container">
         <SectionHeading

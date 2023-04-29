@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { pageTitle } from '../../helper'
 import Cta from '../Cta'
-import PageHeading from '../PageHeading'
+// import PageHeading from '../PageHeading'
 import Pagination from '../Pagination'
 import PostStyle2 from '../Post/PostStyle2'
 import Div from '../Div'
@@ -46,11 +46,11 @@ export default function BlogPage() {
   
   return (
     <>
-      <PageHeading 
+      {/* <PageHeading 
         title='Our Blog'
         bgSrc='/images/blog_hero_bg.jpeg'
         pageLinkText='Blog'
-      />
+      /> */}
       <Spacing lg='150' md='80'/>
       <Div className="container">
         <Div className="row">

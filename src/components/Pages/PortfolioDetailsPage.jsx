@@ -1,40 +1,61 @@
 import React, { useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+// import { useParams } from 'react-router-dom'
 import { pageTitle } from '../../helper'
+import { Link } from 'react-router-dom';
 import Button from '../Button'
 import Cta from '../Cta'
-import PageHeading from '../PageHeading'
+// import PageHeading from '../PageHeading'
 import Div from '../Div'
 import SectionHeading from '../SectionHeading'
+import { useLocation } from 'react-router-dom'
 import Spacing from '../Spacing'
+import portfolioData from '../Portfolio/data'
 
 export default function PortfolioDetailsPage() {
-  const params = useParams()
+      window.scrollTo(0, 0);
+  // const params = useParams()
+    const locate = useLocation()
+    let length = portfolioData.length;
+      let { index ,nextstate} = locate.state
+      const next =index+1;
+      const prev =index-1;
+     if(nextstate === "next")
+      index = next%length
+    else if(nextstate === "prev"){
+      index = prev%length
+      if(index === -1)
+      {
+        index = length-1
+      }
+    }
+      
+    console.log(index)
+    const portfolio = portfolioData[index]
+    const {bigsrc,discription,location,catgeory,stack,date,client } = portfolio
+     
   pageTitle('Portfolio Details');
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
   return (
     <>
-      <PageHeading 
+      {/* <PageHeading 
         title='Portfolio Details'
         bgSrc='/images/service_hero_bg.jpeg'
         pageLinkText={params.portfolioDetailsId}
-      />
+      /> */}
       <Spacing lg='150' md='80'/>
       <Div className="container">
-        <img src="/images/portfolio_details_1.jpeg" alt="Details" className="cs-radius_15 w-100" />
+        <img src={bigsrc} alt="Details" className="cs-radius_15 w-100" />
         <Spacing lg='90' md='40'/>
         <Div className="row">
           <Div className="col-lg-6">
             <SectionHeading 
-              title='Graffiti wall artwork' 
-              subtitle='Creative' 
+              title={stack} 
+              subtitle="details:" 
             >
               <Spacing lg='40' md='20'/>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium voltire doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-              <Spacing lg='10' md='10'/>
-              <p>Ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit.</p>
+              <p>{discription}</p>
             </SectionHeading>
           </Div>
           <Div className="col-lg-5 offset-lg-1">
@@ -44,27 +65,27 @@ export default function PortfolioDetailsPage() {
             <Div className="row">
               <Div className="col-6">
                 <h3 className='cs-accent_color cs-font_22 cs-font_18_sm cs-m0'>Category:</h3>
-                <p className='cs-m0'>Artwork</p>
+                <p className='cs-m0'>{catgeory}</p>
                 <Spacing lg='30' md='30'/>
               </Div>
               <Div className="col-6">
                 <h3 className='cs-accent_color cs-font_22 cs-font_18_sm cs-m0'>Location:</h3>
-                <p className='cs-m0'>United Kindom</p>
+                <p className='cs-m0'>{location}</p>
                 <Spacing lg='30' md='30'/>
               </Div>
               <Div className="col-6">
-                <h3 className='cs-accent_color cs-font_22 cs-font_18_sm cs-m0'>Software:</h3>
-                <p className='cs-m0'>Adobe Illustrator</p>
+                <h3 className='cs-accent_color cs-font_22 cs-font_18_sm cs-m0'>Stack:</h3>
+                <p className='cs-m0'>{stack}</p>
                 <Spacing lg='30' md='30'/>
               </Div>
               <Div className="col-6">
                 <h3 className='cs-accent_color cs-font_22 cs-font_18_sm cs-m0'>Dated:</h3>
-                <p className='cs-m0'>14-Aug-2022</p>
+                <p className='cs-m0'>{date}</p>
                 <Spacing lg='30' md='30'/>
               </Div>
               <Div className="col-6">
                 <h3 className='cs-accent_color cs-font_22 cs-font_18_sm cs-m0'>Client:</h3>
-                <p className='cs-m0'>Andreo Bowla</p>
+                <p className='cs-m0'>{client}</p>
                 <Spacing lg='30' md='30'/>
               </Div>
             </Div>
@@ -73,10 +94,14 @@ export default function PortfolioDetailsPage() {
         <Spacing lg='65' md='10'/>
           <Div className="cs-page_navigation cs-center">
             <Div>
-              <Button btnLink='/portfolio/portfolio-details' btnText='Prev Project' variant='cs-type1'/>
+              <Link href='/portfolio/portfolio-details' state={{index,nextstate: "prev"}}>
+              <Button btnText='Prev Project' variant='cs-type1'/>
+            </Link>
             </Div>
             <Div>
-              <Button btnLink='/portfolio/portfolio-details' btnText='Next Project'/>
+            <Link href='/portfolio/portfolio-details' state={{index,nextstate: "next"}}>
+              <Button btnText='Next Project'/>
+              </Link>
             </Div>
           </Div>
       </Div>

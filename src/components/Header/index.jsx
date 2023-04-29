@@ -54,14 +54,14 @@ export default function Header({ variant }) {
                         About
                       </NavLink>
                     </li>
-                    <li className="menu-item-has-children">
+                    <li >
                       <NavLink
                         to="service"
                         onClick={() => setMobileToggle(false)}
                       >
                         Services
                       </NavLink>
-                      <DropDown>
+                      {/* <DropDown>
                         <ul>
                           <li>
                             <Link
@@ -80,12 +80,12 @@ export default function Header({ variant }) {
                             </Link>
                           </li>
                         </ul>
-                      </DropDown>
+                      </DropDown> */}
                     </li>
                     <li className="menu-item-has-children">
                       <NavLink
-                        to="portfolio"
-                        onClick={() => setMobileToggle(false)}
+                        to="portfolio/portfolio-details"
+                        onClick={() => setMobileToggle(false)}  state={{index: 0 ,nextstate: "current"}}
                       >
                         Portfolio
                       </NavLink>
@@ -101,7 +101,7 @@ export default function Header({ variant }) {
                           </li>
                           <li>
                             <Link
-                              to="portfolio/portfolio-details"
+                              to="/portfolio/portfolio-details" state={{index: 0 ,nextstate: "current"}}
                               onClick={() => setMobileToggle(false)}
                             >
                               Portfolio Details

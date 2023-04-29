@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+// import { useParams } from 'react-router-dom'
 import { pageTitle } from '../../helper'
 import Accordion from '../Accordion'
 import Button from '../Button'
 import Cta from '../Cta'
 import IconBox from '../IconBox'
-import PageHeading from '../PageHeading'
+// import PageHeading from '../PageHeading'
 import Div from '../Div'
 import SectionHeading from '../SectionHeading'
 import TestimonialSlider from '../Slider/TestimonialSlider'
@@ -13,17 +13,17 @@ import Spacing from '../Spacing'
 
 export default function ServiceDetailsPage() {
   pageTitle('Service Details');
-  const params = useParams();
+  // const params = useParams();
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
   return (
     <>
-      <PageHeading 
+      {/* <PageHeading 
         title='Service Details'
         bgSrc='/images/service_hero_bg.jpeg'
         pageLinkText={params.serviceDetailsId}
-      />
+      /> */}
       <Spacing lg='145' md='80'/>
       <Div className="container">
         <SectionHeading 

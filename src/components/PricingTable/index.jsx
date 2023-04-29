@@ -12,7 +12,7 @@ export default function PricingTable({title, price, currency, features, btnLink,
         <Div className="cs-price">
           <h3 className="cs-white_color">{currency}{price}</h3>
         </Div>
-        <Div className="cs-price_text">Per subscriber per year</Div>
+        <Div className="cs-price_text">One Time Investment</Div>
       </Div>
       <ul className="cs-pricing_feature cs-mp0">
         {features.map((feature, index)=>(

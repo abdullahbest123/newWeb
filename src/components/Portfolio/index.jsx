@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import Div from '../Div';
 import './portfolio.scss';
 
-export default function Portfolio({ href, src, title, subtitle, variant }) {
+export default function Portfolio({ href, src, title, subtitle, variant,discription,catgeory,location,stack,date,client,index }) {
   return (
     <Link
-      to={href}
+      to={href}  state={{ index,nextstate: "current"}}
       className={`cs-portfolio cs-bg ${variant ? variant : 'cs-style1'}`}
     >
       <>

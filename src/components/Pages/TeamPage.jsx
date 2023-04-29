@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { pageTitle } from '../../helper';
 import Cta from '../Cta';
-import PageHeading from '../PageHeading';
+// import PageHeading from '../PageHeading';
 import Div from '../Div';
 import SectionHeading from '../SectionHeading';
 import Spacing from '../Spacing';
@@ -54,11 +54,11 @@ export default function TeamPage() {
 
   return (
     <>
-      <PageHeading
+      {/* <PageHeading
         title="Our Team"
         bgSrc="images/team_hero_bg.jpeg"
         pageLinkText="Team"
-      />
+      /> */}
       <Spacing lg="145" md="80" />
       <Div className="container">
         <SectionHeading

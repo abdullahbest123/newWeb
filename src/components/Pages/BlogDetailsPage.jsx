@@ -1,15 +1,15 @@
 import { Icon } from '@iconify/react'
 import React, { useEffect } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { pageTitle } from '../../helper'
 import Cta from '../Cta'
-import PageHeading from '../PageHeading'
+// import PageHeading from '../PageHeading'
 import Div from '../Div'
 import Sidebar from '../Sidebar.jsx'
 import Spacing from '../Spacing'
 
 export default function BlogDetailsPage() {
-  const params = useParams()
+  // const params = useParams()
   pageTitle('Blog Details');
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -17,11 +17,11 @@ export default function BlogDetailsPage() {
   return (
     <>
     {/* Start Page Heading Section */}
-      <PageHeading 
+      {/* <PageHeading 
         title='Blog Single'
         bgSrc='/images/blog_details_hero_bg.jpeg'
         pageLinkText={params.blogDetailsId}
-      />
+      /> */}
       {/* End Page Heading Section */}
 
       {/* Start Blog Details */}

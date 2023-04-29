@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { pageTitle } from '../../helper';
 import Cta from '../Cta';
-import PageHeading from '../PageHeading';
+// import PageHeading from '../PageHeading';
 import Portfolio from '../Portfolio';
 import Div from '../Div';
 import SectionHeading from '../SectionHeading';
@@ -110,11 +110,11 @@ export default function PortfolioPage() {
 
   return (
     <>
-      <PageHeading
+      {/* <PageHeading
         title="Portfolio"
         bgSrc="images/portfolio_hero_bg.jpeg"
         pageLinkText="Portfolio"
-      />
+      /> */}
       <Spacing lg="145" md="80" />
       <Div className="container">
         <Div className="cs-portfolio_1_heading">

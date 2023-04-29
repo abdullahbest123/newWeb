@@ -5,7 +5,7 @@ import Accordion from '../Accordion';
 import Button from '../Button';
 import Cta from '../Cta';
 import Div from '../Div';
-import PageHeading from '../PageHeading';
+// import PageHeading from '../PageHeading';
 import Spacing from '../Spacing';
 
 export default function FaqPage() {
@@ -15,11 +15,11 @@ export default function FaqPage() {
   }, []);
   return (
     <>
-      <PageHeading
+      {/* <PageHeading
         title="Frequently Asked Questions"
         bgSrc="/images/about_hero_bg.jpeg"
         pageLinkText="FAQ"
-      />
+      /> */}
       <Spacing lg="150" md="80" />
       <Div className="container">
         <Div className="row">

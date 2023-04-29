@@ -8,7 +8,7 @@ export default function Team({memberImage, memberName, memberDesignation, member
   return (
     <Div className="cs-team cs-style1">
         <Div className="cs-member_thumb">
-          <a href={outlink}  target="noopener"><img src={memberImage} alt={memberName} /></a>
+          <a href={outlink}  target="_blank" rel="noopener noreferrer" ><img src={memberImage} alt={memberName} /></a>
           <Div className="cs-member_overlay" />
         </Div>
         <Div className="cs-member_info">

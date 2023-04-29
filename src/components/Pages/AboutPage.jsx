@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { pageTitle } from '../../helper';
 import Cta from '../Cta';
 import FunFact from '../FunFact';
-import PageHeading from '../PageHeading';
+// import PageHeading from '../PageHeading';
 import Div from '../Div';
 import SectionHeading from '../SectionHeading';
 import TeamSlider from '../Slider/TeamSlider';
@@ -35,11 +35,11 @@ export default function AboutPage() {
   return (
     <>
       {/* Start Page Heading Section */}
-      <PageHeading
+      {/* <PageHeading
         title="About Us"
         bgSrc="images/about_hero_bg.jpeg"
         pageLinkText="About Us"
-      />
+      /> */}
       {/* End Page Heading Section */}
 
       {/* Start About Section */}

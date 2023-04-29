@@ -5,8 +5,9 @@ import { Icon } from '@iconify/react';
 import Hero from '../Hero';
 import Div from '../Div';
 import SectionHeading from '../SectionHeading';
+import PricingTableList from '../PricingTable/PricingTableList';
 import Spacing from '../Spacing';
-import Cta from '../Cta';
+// import Cta from '../Cta';
 import LogoList from '../LogoList';
 import MovingText from '../MovingText';
 import PortfolioSlider from '../Slider/PortfolioSlider';
@@ -72,7 +73,7 @@ export default function Home() {
         scrollDownId="#service"
         socialLinksHeading="Follow Us"
         heroSocialLinks={heroSocialLinks}
-        bgImageUrl="/images/hero_bg.jpeg"
+        bgImageUrl="/images/aaa.jpg"
       />
       {/* End Hero Section */}
 
@@ -125,7 +126,7 @@ export default function Home() {
                 </Div>
                 <Div className="col-lg-3 col-sm-6">
                   <Card
-                    title="Digital Marketing"
+                    title="WordPress"
                     link="/service/service-details"
                     src="/images/service_3.jpeg"
                     alt="Service"
@@ -135,7 +136,7 @@ export default function Home() {
                 <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                 <Div className="col-lg-3 col-sm-6">
                   <Card
-                    title="Technology"
+                    title="Shopify Store"
                     link="/service/service-details"
                     src="/images/service_4.jpeg"
                     alt="Service"
@@ -187,6 +188,16 @@ export default function Home() {
           </Div>
         </Div>
       </Div>
+      
+      <Spacing lg="130" md="70" />
+      <Div className="container">
+        <SectionHeading
+          title='Providing best <br/>pricing for client' 
+          subtitle='Pricing & Packaging'
+        />
+        <Spacing lg='85' md='40'/>
+        <PricingTableList/>
+      </Div>
       {/* End Awards Section */}
 
       {/* Start Video Block Section
@@ -205,7 +216,7 @@ export default function Home() {
       {/* End Video Block Section */}
 
       {/* Start Team Section */}
-      <Spacing lg="145" md="80" />
+        <Spacing lg='85' md='40'/>
       <Div className="container">
         <SectionHeading
           title="Awesome team <br/>members"
@@ -260,7 +271,7 @@ export default function Home() {
       </Div>
       {/* End LogoList Section */}
  {/* Start Contact Section */}
-      <Spacing lg="140" md="70" />
+      <Spacing lg="105" md="70" />
       <Div className="container">
         <SectionHeading
           title="Getting touch"
